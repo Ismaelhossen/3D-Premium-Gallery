@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>✨ 3D Premium Gallery · isMaIL</title>
+    <link rel="stylesheet" href="style.css">
+
+   
+</head>
+<body>
+
+    <!-- ─── Background ─── -->
+    <div class="bg-gradient"></div>
+    <div class="glow-orb orb1"></div>
+    <div class="glow-orb orb2"></div>
+    <div class="glow-orb orb3"></div>
+    <div class="glow-orb orb4"></div>
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- ─── Floating CSS particles ─── -->
+    <div id="float-particles"></div>
+
+    <!-- ─── Brand / Name ─── -->
+    <div class="brand">
+        <span class="label">✦</span>
+        <span class="divider"></span>
+        <span class="name">isMaIL</span>
+        <span class="divider"></span>
+        <span class="label">3D</span>
+    </div>
+
+    <!-- ─── Gallery ─── -->
+    <div class="wrapper">
+        <div class="container" id="gallery">
+            <span style="--i:1" data-index="0"><img src="img/1.jpg" alt="Image 1" /></span>
+            <span style="--i:2" data-index="1"><img src="img/2.jpg" alt="Image 2" /></span>
+            <span style="--i:3" data-index="2"><img src="img/3.jpg" alt="Image 3" /></span>
+            <span style="--i:4" data-index="3"><img src="img/4.jpg" alt="Image 4" /></span>
+            <span style="--i:5" data-index="4"><img src="img/5.jpg" alt="Image 5" /></span>
+            <span style="--i:6" data-index="5"><img src="img/6.jpg" alt="Image 6" /></span>
+            <span style="--i:7" data-index="6"><img src="img/7.jpg" alt="Image 7" /></span>
+            <span style="--i:8" data-index="7"><img src="img/8.jpg" alt="Image 8" /></span>
+        </div>
+    </div>
+
+    <!-- ─── Hint ─── -->
+    <div class="hint">⟳ hover · drag · arrows ⟳</div>
+
+    <!-- ─── Controls ─── -->
+    <div class="controls">
+        <button id="prevBtn" aria-label="Previous">◀</button>
+
+        <div class="dots" id="dots"></div>
+
+        <div class="counter"><span id="currentIdx">1</span> / 8</div>
+
+        <button id="nextBtn" aria-label="Next">▶</button>
+    </div>
+
+ 
+    <script src="index.js"></script>
+</body>
+</html>
